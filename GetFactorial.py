@@ -1,5 +1,7 @@
 def get_factorial(n):
-    if n == 0:
+    if n<0:
+        raise ValueError("n must be a non-negative integer")
+    el if n == 0:
         return 1
     else:
         return n * get_factorial(n-1)
